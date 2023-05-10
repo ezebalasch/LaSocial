@@ -1,0 +1,9 @@
+.ListGroup{
+    display: grid;
+    grid-template-columns: repeat(3, 20rem);
+    grid-gap: 25px;
+}
+.blocks-wrapper{
+    margin-left: 38rem;
+    margin-top: 10rem;
+}

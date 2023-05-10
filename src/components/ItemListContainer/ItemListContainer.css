@@ -1,0 +1,14 @@
+.greetingContainer{
+    background-color: #fa7647;
+    display: inline-block;
+    padding-top: 3px;
+    height: 50px;
+    color: white;
+    font-family: 'Fjalla One', sans-serif;
+    margin: 1.5rem;
+    box-shadow: 0 0 0 3px white, 0 0 0 5px rgb(250, 118, 71);
+    
+}
+.container{
+    margin: 1.5rem;
+}
