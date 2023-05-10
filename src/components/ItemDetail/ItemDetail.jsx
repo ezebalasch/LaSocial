@@ -1,41 +1,39 @@
 
 import ItemCount from './../ItemCount/ItemCount';
+import './ItemDetail.css'
+import vegetarian from './../../assets/img/vegetarian.png'
+import gluten from './../../assets/img/gluten.png'
+
 
 const ItemDetail = ({product, onAdd}) => {
     
     return(
         <article className="CardItem">
-            <header className="Header">
-                <h2 className="ItemHeader">{product.pizza_name}</h2>
-            </header>
-            <picture>
                 <img src={product.img} alt={product.pizza_name} className="ItemImg"/>
-            </picture>
+                <h2 className="ItemHeader">{product.pizza_name}</h2>
             <section>
                 <p className="Info">
-                    Tipo: {product.crust_type}
+                    {product.crust_type}
                 </p>
                 <p className="Info">
                     Ingredientes: {product.toppings}
                 </p>
-                <p className="Info">
+                <p className="InfoDescription">
                     {product.description}
                 </p>
                 <p className="Info">
                     {product.size}
                 </p>
-                <p className="Info">
+                <p className="InfoPrice">
                     ${product.price}
                 </p>
                 <p className="Info">
                     Tiempo de espera: {product.delivery_time}min
                 </p>
-                <p className="Info">
-                    Vegetariana: {product.vegetarian}
-                </p>
-                <p className="Info">
-                    Libre de Gluten: {product.gluten_free}
-                </p>
+                {product.vegetarian ? <img className='vegetarian' src={vegetarian}/> : false}
+                
+                {product.gluten_free ? <img className='glutenFree' src={gluten}/> : false}
+
             </section>
             <footer className="ItemFooter">
                 {

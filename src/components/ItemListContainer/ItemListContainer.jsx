@@ -18,7 +18,7 @@ const ItemListContainer = ({greeting}) => {
 		const productList = new Promise((resolve, reject) => {
 			setTimeout(() => {
 				resolve(products)
-			}, 100)
+			}, 200)
 		})
 		productList.then(result => {
 			if (id) {

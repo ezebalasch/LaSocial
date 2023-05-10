@@ -9,7 +9,7 @@ export const products = [{
     "size": "8 porciones",
     "delivery_time": 25,
     "vegetarian": true,
-    "gluten_free": false,
+    "gluten_free": true,
     "img": require("./../assets/img/molde/MUZZARELLA.jpg")
   }, {
     "id": v4(),
