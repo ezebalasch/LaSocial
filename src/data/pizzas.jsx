@@ -50,7 +50,7 @@ export const products = [{
   }, {
     "id": v4(),
     "pizza_name": "4 QUESOS",
-    "description": "Nuestra pizza 4 quesos es la combinación perfecta de quesos de alta calidad que se funden en armonía en cada bocado. Preparamos nuestra masa de pizza con ingredientes simples y auténticos. La cubrimos con una mezcla de cuatro quesos diferentes: queso mozzarella fresco, queso roquefort, queso parmesano y queso provolone. Horneamos nuestra pizza en nuestro horno de leña para lograr una masa suave y esponjosa con un borde crujiente. Cada bocado de nuestra pizza 4 quesos es una experiencia deliciosa e irresistible que no te querrás perder.",
+    "description": "Preparamos nuestra masa de pizza con ingredientes simples y auténticos. La cubrimos con una mezcla de cuatro quesos diferentes: queso mozzarella fresco, queso roquefort, queso parmesano y queso provolone. Horneamos nuestra pizza en nuestro horno de leña para lograr una masa suave y esponjosa con un borde crujiente.",
     "price": 4600,
     "toppings": "Salsa de tomate, queso mozzarella, queso roquefort, queso parmesano, queso provolone y aceitunas",
     "crust_type": "Al molde",
@@ -86,7 +86,7 @@ export const products = [{
   }, {
     "id": v4(),
     "pizza_name": "ESPECIAL CON ANANÁ",
-    "description": "Empezamos con una masa de pizza tradicional hecha con harina de trigo, levadura, agua y sal. A continuación, cubrimos la pizza con una salsa de tomate suave y añadimos generosas porciones de ananá fresco cortado en rodajas. Para equilibrar el sabor dulce del ananá, agregamos jamón, queso mozzarella fresco y queso provolone rallado. Luego, horneamos la pizza en nuestro horno de leña para obtener una base crujiente y una cobertura perfectamente derretida. El resultado es una deliciosa combinación de sabores agridulces que seguro te encantará.",
+    "description": "Empezamos con una masa de pizza tradicional hecha con harina de trigo, levadura, agua y sal. A continuación, cubrimos la pizza con una salsa de tomate suave y añadimos generosas porciones de ananá fresco cortado en rodajas. Para equilibrar el sabor dulce del ananá, agregamos jamón, queso mozzarella fresco y queso provolone rallado. Luego, horneamos la pizza en nuestro horno de leña para obtener una base crujiente y una cobertura perfectamente derretida.",
     "price": 5200,
     "toppings": "Salsa de tomate, queso mozzarella, ananá, jamón cocido y aceitunas",
     "crust_type": "Al molde",
@@ -206,7 +206,7 @@ export const products = [{
   }, {
     "id": v4(),
     "pizza_name": "4 QUESOS",
-    "description": "Nuestra pizza 4 quesos es la combinación perfecta de quesos de alta calidad que se funden en armonía en cada bocado. Preparamos nuestra masa de pizza con ingredientes simples y auténticos. La cubrimos con una mezcla de cuatro quesos diferentes: queso mozzarella fresco, queso roquefort, queso parmesano y queso provolone. Horneamos nuestra pizza en nuestro horno de leña para lograr una masa suave y esponjosa con un borde crujiente. Cada bocado de nuestra pizza 4 quesos es una experiencia deliciosa e irresistible que no te querrás perder.",
+    "description": " Preparamos nuestra masa de pizza con ingredientes simples y auténticos. La cubrimos con una mezcla de cuatro quesos diferentes: queso mozzarella fresco, queso roquefort, queso parmesano y queso provolone.",
     "price": 4600,
     "toppings": "Salsa de tomate, queso mozzarella, queso roquefort, queso parmesano, queso provolone y aceitunas",
     "crust_type": "A la piedra",

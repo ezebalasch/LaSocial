@@ -22,12 +22,12 @@ function App() {
 					element={<ItemListContainer greeting="Ezequiel" />}
 				/>
 				<Route
-					path="/item/:id"
+					path="/item/:id" 
 					element={<ItemDetailContainer onAdd={onAdd} />}
 				/>
-        <Route path='*' element={<h1>404 NOT FOUND</h1>}/>
-			</Routes>
-		</BrowserRouter>
+				<Route path='*' element={<h1>404 NOT FOUND</h1>}/>
+					</Routes>
+			</BrowserRouter>
 
     </div>
   );

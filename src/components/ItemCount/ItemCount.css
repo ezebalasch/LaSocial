@@ -20,3 +20,6 @@ h4{
 .Button:active{
     background-color: #55b3cb;
 }
+.contador{
+    text-align: right;
+}

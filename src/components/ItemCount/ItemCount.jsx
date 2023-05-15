@@ -19,13 +19,13 @@ const ItemCount = ({stock, onAdd}) => {
 		if (counter > 0) setCounter(counter - 1)
 	}
     return(
-		<Container>
+		<div className="contador">
 			<Row>
 				<Col><button className="Button" onClick={handlerDecreaseCount}>-</button></Col>
 				<Col><h4>{counter}</h4></Col>
 				<Col><button className="Button" onClick={handlerIncreaseCount}>+</button></Col>
 			</Row>
-	  </Container>
+	    </ div>
   
         // <div className="Counter">
         //     <div className="Controls">

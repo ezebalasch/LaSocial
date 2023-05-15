@@ -30,17 +30,26 @@ const ItemDetail = ({product, onAdd}) => {
                 <p className="Info">
                     Tiempo de espera: {product.delivery_time}min
                 </p>
-                {product.vegetarian ? <img className='vegetarian' src={vegetarian}/> : false}
-                
-                {product.gluten_free ? <img className='glutenFree' src={gluten}/> : false}
+                <div>
+                    <div className='row justify-content-between'>
+                        <div className='col-6 one'>
+                            {product.vegetarian ? <img className='vegetarian' src={vegetarian}/> : false}
+                    
+                            {product.gluten_free ? <img className='glutenFree' src={gluten}/> : false}
 
-            </section>
-            <footer className="ItemFooter">
-                {
-                        <ItemCount stock={10} onAdd={onAdd}/>
+                        </div>
+                        <div className="col-4 two">
+                        {
+                            <ItemCount stock={10} onAdd={onAdd}/>
 
-                }
-            </footer>
+                        }
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>  
+
         </article>
     )
 }
