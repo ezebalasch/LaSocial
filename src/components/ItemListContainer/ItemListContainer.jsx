@@ -12,7 +12,6 @@ const ItemListContainer = ({greeting}) => {
     const [list, setList] = useState([])
 	const { id } = useParams()
 
-	console.log(id)
 
 	useEffect(() => {
 		const productList = new Promise((resolve, reject) => {
@@ -39,7 +38,7 @@ const ItemListContainer = ({greeting}) => {
         </div>
         <Row>
         <Col xs={12} md={8}>
-        <div class='container'>
+        <div className='container'>
             <ItemList list={list} />
         </div>
         </Col>

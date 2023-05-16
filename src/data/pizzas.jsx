@@ -277,18 +277,6 @@ export const products = [{
     "img": require("./../assets/img/piedra/PALMITOSP.jpeg")
   }, {
     "id": v4(),
-    "pizza_name": "PROMO PALMITOS",
-    "description": "Comenzamos con una masa de pizza tradicional elaborada con harina de trigo, levadura, agua y sal. Luego, cubrimos la pizza con una salsa suave de tomate y añadimos palmitos frescos cortados en rodajas. Para dar un toque extra de sabor, agregamos jamón cocido en cubos y una generosa cantidad de queso mozzarella fresco. Finalmente, horneamos la pizza en nuestro horno de leña hasta que esté dorada y crujiente por fuera y el queso esté derretido y burbujeante por dentro. ",
-    "price": 6500,
-    "toppings": "Pizza Especial con Palmitos + Gaseosa + 1 porción a elección",
-    "crust_type": "Promos",
-    "size": "1 unidad",
-    "delivery_time": 41,
-    "vegetarian": false,
-    "gluten_free": false,
-    "img": require("./../assets/img/promo/palmitosgaseosa.jpg")
-  },  {
-    "id": v4(),
     "pizza_name": "GASEOSA",
     "description": "Coca-Cola es una de las marcas más icónicas y reconocidas en todo el mundo. Desde su creación en 1886, la bebida gaseosa carbonatada ha sido disfrutada por millones de personas en todo el mundo.",
     "price": 900,
@@ -299,6 +287,174 @@ export const products = [{
     "vegetarian": false,
     "gluten_free": false,
     "img": require("./../assets/img/bebida/cocacola.jpg")
+  },  {
+    "id": v4(),
+    "pizza_name": "MOSCATTO BOTELLA",
+    "description": "Moscato es un vino dulce y afrutado que se elabora con uvas moscatel y se caracteriza por sus notas florales y cítricas. Es un vino ideal para maridar con postres, frutas y quesos suaves, y también se puede disfrutar como aperitivo. Su baja graduación alcohólica lo convierte en una opción refrescante y ligera para cualquier ocasión.",
+    "price": 1300,
+    "toppings": "930ML",
+    "crust_type": "Bebidas",
+    "size": "1 unidad",
+    "delivery_time": 15,
+    "vegetarian": false,
+    "gluten_free": false,
+    "img": require("./../assets/img/bebida/moscato.jpg")
+  },  {
+    "id": v4(),
+    "pizza_name": "MOSCATTO PINGÜINO",
+    "description": "El Moscato en envase de pingüino es un vino dulce y refrescante que conserva las características del Moscato tradicional en un envase práctico y divertido en forma de pingüino. Su sabor afrutado y notas florales lo hacen ideal para maridar con postres y disfrutar en momentos informales.",
+    "price": 880,
+    "toppings": "650ML",
+    "crust_type": "Bebidas",
+    "size": "1 unidad",
+    "delivery_time": 15,
+    "vegetarian": false,
+    "gluten_free": false,
+    "img": require("./../assets/img/bebida/moscatopin.jpg")
+  },  {
+    "id": v4(),
+    "pizza_name": "QUILMES BOTELLA",
+    "description": "La cerveza Quilmes de litro es una cerveza rubia clara y refrescante con un sabor suave y equilibrado. Es una cerveza ideal para acompañar comidas, especialmente platos salados y picantes. Su presentación en botella de litro la hace perfecta para compartir y disfrutar en grupo.",
+    "price": 1100,
+    "toppings": "1L",
+    "crust_type": "Bebidas",
+    "size": "1 unidad",
+    "delivery_time": 15,
+    "vegetarian": false,
+    "gluten_free": false,
+    "img": require("./../assets/img/bebida/quilmes.jpg")
+  },  {
+    "id": v4(),
+    "pizza_name": "QUILMES LATA",
+    "description": "La cerveza Quilmes en lata es una cerveza clara y refrescante, con un sabor suave y equilibrado, ideal para acompañar comidas o para disfrutar en cualquier momento del día. Su presentación en lata es práctica y conveniente para transportar y almacenar en el hogar. Además, su tamaño es perfecto para una sola persona.",
+    "price": 650,
+    "toppings": "473ML",
+    "crust_type": "Bebidas",
+    "size": "1 unidad",
+    "delivery_time": 15,
+    "vegetarian": false,
+    "gluten_free": false,
+    "img": require("./../assets/img/bebida/quilmeslata.jpg")
+  },  {
+    "id": v4(),
+    "pizza_name": "CHOPP",
+    "description": "La cerveza en chopp es una cerveza tirada, fresca y espumosa, ideal para degustar en un ambiente social y relajado. La temperatura adecuada y la presión controlada en su elaboración garantizan una experiencia de sabor única, realzando las características de la cerveza. La presentación en jarra o copa permite apreciar su color y textura, mientras que el tamaño se adapta a la necesidad del consumidor.",
+    "price": 900,
+    "toppings": "500ML",
+    "crust_type": "Bebidas",
+    "size": "1 unidad",
+    "delivery_time": 15,
+    "vegetarian": false,
+    "gluten_free": false,
+    "img": require("./../assets/img/bebida/chopp.jpg")
+  },  {
+    "id": v4(),
+    "pizza_name": "AGUA",
+    "description": "El agua embotellada es una bebida refrescante, sin calorías ni aditivos artificiales, que proporciona hidratación al cuerpo. Es una opción saludable y conveniente para llevar consigo en cualquier lugar. Su presentación en botella permite su fácil transporte y almacenamiento, y su tamaño varía desde pequeñas porciones hasta botellas de mayor capacidad, adaptándose a las necesidades del consumidor.",
+    "price": 500,
+    "toppings": "500ML",
+    "crust_type": "Bebidas",
+    "size": "1 unidad",
+    "delivery_time": 15,
+    "vegetarian": false,
+    "gluten_free": false,
+    "img": require("./../assets/img/bebida/agua.jpg")
+  },  {
+    "id": v4(),
+    "pizza_name": "AGUA SABORIZADA",
+    "description": "El agua saborizada embotellada es una bebida refrescante, sin calorías ni aditivos artificiales, que proporciona hidratación al cuerpo. Es una opción saludable y conveniente para llevar consigo en cualquier lugar. Su presentación en botella permite su fácil transporte y almacenamiento, y su tamaño varía desde pequeñas porciones hasta botellas de mayor capacidad, adaptándose a las necesidades del consumidor.",
+    "price": 500,
+    "toppings": "500ML",
+    "crust_type": "Bebidas",
+    "size": "1 unidad",
+    "delivery_time": 15,
+    "vegetarian": false,
+    "gluten_free": false,
+    "img": require("./../assets/img/bebida/aguasabor.jpg")
+  },  {
+    "id": v4(),
+    "pizza_name": "COPA DE VINO",
+    "description": "La copa de vino es un complemento ideal para una comida elegante o una ocasión especial. El vino se caracteriza por su variedad de sabores, aromas y texturas, que pueden realzar la experiencia gastronómica. Además, el consumo moderado de vino tinto se ha relacionado con beneficios para la salud, como la reducción del riesgo de enfermedades cardiovasculares.",
+    "price": 500,
+    "toppings": "300ML",
+    "crust_type": "Bebidas",
+    "size": "1 unidad",
+    "delivery_time": 15,
+    "vegetarian": false,
+    "gluten_free": false,
+    "img": require("./../assets/img/bebida/copavino.jpg")
+  },  {
+    "id": v4(),
+    "pizza_name": "FERNET CON COCA",
+    "description": "El Fernet con Coca-Cola es una bebida popular en Argentina y otros países de América Latina. El Fernet, una bebida amarga y aromática, se mezcla con Coca-Cola para crear una bebida refrescante y equilibrada en sabor. Es una bebida ideal para compartir en reuniones sociales o para disfrutar en momentos de relajación.",
+    "price": 900,
+    "toppings": "500ML",
+    "crust_type": "Bebidas",
+    "size": "1 unidad",
+    "delivery_time": 15,
+    "vegetarian": false,
+    "gluten_free": false,
+    "img": require("./../assets/img/bebida/fernet.jpg")
+  },  {
+    "id": v4(),
+    "pizza_name": "APEROL SPRITZ",
+    "description": "El Aperol Spritz es un cóctel de origen italiano, elaborado con Aperol, un licor a base de hierbas y naranjas, combinado con vino espumoso y soda. Es una bebida refrescante, con un sabor equilibrado entre lo dulce y lo amargo, ideal para tomar en una tarde de verano o en una cena con amigos. Su presentación en copa permite apreciar su color naranja brillante y su espuma efervescente.",
+    "price": 900,
+    "toppings": "500ML",
+    "crust_type": "Bebidas",
+    "size": "1 unidad",
+    "delivery_time": 15,
+    "vegetarian": false,
+    "gluten_free": false,
+    "img": require("./../assets/img/bebida/aperol.jpg")
+  },  {
+    "id": v4(),
+    "pizza_name": "FLAN CASERO",
+    "description": "El flan casero con dulce de leche y crema es una variante del tradicional postre que agrega sabores adicionales. El dulce de leche, con su textura cremosa y sabor dulce, complementa perfectamente la suavidad del flan, mientras que la crema aporta un toque de frescura y suavidad. Es un postre indulgente y delicioso, ideal para aquellos que disfrutan de los sabores dulces y cremosos.",
+    "price": 1000,
+    "toppings": "Porción",
+    "crust_type": "Postres",
+    "size": "1 unidad",
+    "delivery_time": 35,
+    "vegetarian": false,
+    "gluten_free": false,
+    "img": require("./../assets/img/postre/flan.jpg")
+  }, {
+    "id": v4(),
+    "pizza_name": "VIGILANTE",
+    "description": "El postre vigilante es un postre típico de la gastronomía argentina, que consiste en queso y dulce de membrillo. El queso, de sabor salado y textura firme, se combina con el dulce de membrillo, de sabor dulce y textura suave y pegajosa. Es una combinación simple pero deliciosa, que se puede disfrutar como postre o como un aperitivo dulce. Es una opción ideal para aquellos que prefieren sabores equilibrados entre lo dulce y lo salado.",
+    "price": 1000,
+    "toppings": "Porción",
+    "crust_type": "Postres",
+    "size": "1 unidad",
+    "delivery_time": 35,
+    "vegetarian": true,
+    "gluten_free": true,
+    "img": require("./../assets/img/postre/vigilante.jpg")
+  }, {
+    "id": v4(),
+    "pizza_name": "FRUTILLAS CON CREMA",
+    "description": "El postre de frutillas con crema en una copa es un postre elegante y delicioso, que combina la dulzura de las frutillas con la cremosidad de la nata o crema chantilly. Es una opción fresca y ligera, ideal para disfrutar en los meses de verano o después de una comida pesada. La presentación en copa permite apreciar las capas de sabor y textura, y la decoración con frutillas frescas aporta un toque de color y frescura.",
+    "price": 1200,
+    "toppings": "Porción",
+    "crust_type": "Postres",
+    "size": "1 unidad",
+    "delivery_time": 35,
+    "vegetarian": true,
+    "gluten_free": true,
+    "img": require("./../assets/img/postre/frutilla.jpg")
+  }, {
+    "id": v4(),
+    "pizza_name": "TORTA BALCARCE",
+    "description": "La torta Balcarce es un postre argentino, que consiste en una base de bizcochuelo esponjoso, rellena de dulce de leche y cubierta con merengue italiano tostado. Es un postre dulce y cremoso, con una combinación perfecta de sabores y texturas. Su presentación en porciones individuales hace que sea ideal para compartir en reuniones sociales o para disfrutar como postre después de una comida.",
+    "price": 1400,
+    "toppings": "Porción",
+    "crust_type": "Postres",
+    "size": "1 unidad",
+    "delivery_time": 35,
+    "vegetarian": true,
+    "gluten_free": false,
+    "img": require("./../assets/img/postre/balcarce.jpg")
   }]
 
   export const getProducts = () => {

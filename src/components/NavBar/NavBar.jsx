@@ -22,7 +22,7 @@ const Navbar = () => {
     }, [])
 
     return (
-        <nav className="navbar navbar-expand-lg bg-body-tertiary">
+        <nav className="navbar navbar-expand-lg m-auto">
             <div className="container-fluid">
                 <Link to='/'>
                     <img src={Logo} width="150"  alt="Logo La Social"/>

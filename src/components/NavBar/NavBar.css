@@ -1,3 +1,16 @@
+.navbar{
+    border: solid 2px;
+    border-color: aliceblue;
+    border-bottom-color: rgb(250, 118, 71);
+    box-shadow: 0 0 10px  rgb(250, 118, 71);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: rgb(255, 255, 255, 0.9);
+}
+.bg-body-tertiary{
+    background-color: rgba(255, 255, 255, 0.5);
+}
 .Option{
     text-decoration: none;
     margin: 1rem;
@@ -25,13 +38,3 @@
     padding: 0.5rem;
 }
 
-.navbar{
-    border: solid 2px;
-    border-color: aliceblue;
-    border-bottom-color: rgb(250, 118, 71);
-    box-shadow: 0 0 10px  rgb(250, 118, 71);
-    position: sticky;
-    top: 0;
-    z-index: 100;
-
-}
