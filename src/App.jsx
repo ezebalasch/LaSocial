@@ -3,9 +3,27 @@ import Navbar from './components/NavBar/NavBar.jsx'
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import {getFirestore, getDocs, collection } from "firebase/firestore";
+import { useEffect } from 'react';
 
 
 function App() {
+	useEffect(() => {
+		const db = getFirestore()
+
+		const refCollection = collection(db, "items")
+		getDocs(refCollection).then(snapshot => {
+			if (snapshot.size === 0) console.log("no results found")
+			else
+			console.log(
+				snapshot.docs.map(doc => {
+					return {id: doc.id, data: doc.data()}
+				})
+			)
+		})
+	
+	}, [])
+
   const onAdd = stock => console.log("Stock actual:  " + stock)
 
   return (

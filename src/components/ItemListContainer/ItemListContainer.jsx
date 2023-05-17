@@ -11,6 +11,16 @@ import Col from 'react-bootstrap/Col';
 const ItemListContainer = ({greeting}) => {
     const [list, setList] = useState([])
 	const { id } = useParams()
+    const [isSmallScreen, setIsSmallScreen] = useState(false);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsSmallScreen(window.innerWidth < 1365)
+        }
+        window.addEventListener('resize', handleResize)
+        handleResize()
+        return() => window.removeEventListener('resize', handleResize)
+    }, [])
 
 
 	useEffect(() => {
@@ -34,22 +44,28 @@ const ItemListContainer = ({greeting}) => {
     return (
         <>
         <div className="greetingContainer">
-            <h1 className='display-6'> Bienvenido, ...{greeting}</h1>
+            <h1 className='display-6'> Bienvenido, {greeting}</h1>
         </div>
-        <Row>
-        <Col xs={12} md={8}>
-        <div className='container'>
-            <ItemList list={list} />
-        </div>
-        </Col>
-        <Col xs={6} md={4}>
-        <CartView/>
-        </Col>
-      </Row>
-
-
-
         
+            {isSmallScreen ? (
+                    <div className='containerMobile'>
+                        <ItemList list={list} />
+                    </div>
+            ) : (
+                <>
+                    <Row>
+                        <Col xs={12} md={8}>
+                            <div className='container'>
+                                <ItemList list={list} />
+                            </div>
+                        </Col>
+                        <Col className="cartCol" xs={6} md={4}>
+                            <CartView/>
+                        </Col>
+                    </Row>
+                </>
+
+            )}
 
         </>
     )

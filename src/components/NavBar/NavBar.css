@@ -37,4 +37,14 @@
     margin-left: 9rem;
     padding: 0.5rem;
 }
+.hamDiv{
+    margin: 1rem;
+    color: #fa7647;
+    font-family: 'Fjalla One', sans-serif;
+    background-color: #9cdbeb;
+    box-shadow: 0 0 0 1.5px white, 0 0 0 3px rgb(156, 219, 235);
+    border-radius: 2px;
+    padding: 0.1rem 0.3rem;
+    transform: scale(2);
 
+}
