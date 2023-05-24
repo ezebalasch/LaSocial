@@ -3,9 +3,24 @@ import ItemCount from './../ItemCount/ItemCount';
 import './ItemDetail.css'
 import vegetarian from './../../assets/img/vegetarian.png'
 import gluten from './../../assets/img/gluten.png'
+import { useContext, useState } from 'react';
+import { Link } from 'react-router-dom';
+import { CartContext } from './../../context/CartContext';
 
 
 const ItemDetail = ({product, onAdd}) => {
+    const [quantityAdded, setQuantityAdded] = useState(0);
+    const { addItem } = useContext(CartContext)
+
+    const handleOnAdd = (quantity) => {
+        setQuantityAdded(quantity)
+
+        // const item = {
+        //     id, name, price
+        // }
+        // addItem(item, quantity)
+        
+    }
     return(
         <article className="CardItem">
                 <div className='backButton'>
@@ -47,7 +62,11 @@ const ItemDetail = ({product, onAdd}) => {
                         </div>
                         <div className="col-4 two">
                         {
-                            <ItemCount stock={10} onAdd={onAdd}/>
+                            quantityAdded > 0 ? (
+                                <Link to="/cart" style={{ margin: '10px 0px' }}  className='Option'>Terminar compra</Link>
+                            ) : (
+                                <ItemCount initial={1} stock={10} onAdd={handleOnAdd}/>
+                            )
 
                         }
                         </div>

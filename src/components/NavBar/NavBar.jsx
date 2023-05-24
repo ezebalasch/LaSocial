@@ -19,6 +19,7 @@ const Navbar = () => {
         handleResize()
         return() =>  window.removeEventListener('resize', handleResize)
     }, [])
+    
     useEffect(() => {
         const productList = new Promise((resolve, reject) => 
         resolve(products)

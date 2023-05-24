@@ -5,6 +5,7 @@ import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailCont
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import {getFirestore, getDocs, collection } from "firebase/firestore";
 import { useEffect } from 'react';
+import { CartProvider } from './context/CartContext';
 
 
 function App() {
@@ -29,22 +30,24 @@ function App() {
   return (
     <div className="App">
       		<BrowserRouter>
-			<Navbar />
-			<Routes>
-				<Route
-					path="/"
-					element={<ItemListContainer greeting="Ezequiel" />}
-				/>
-				<Route
-					path="/category/:id"
-					element={<ItemListContainer greeting="Ezequiel" />}
-				/>
-				<Route
-					path="/item/:id" 
-					element={<ItemDetailContainer onAdd={onAdd} />}
-				/>
-				<Route path='*' element={<h1>404 NOT FOUND</h1>}/>
+				<CartProvider>
+					<Navbar />
+					<Routes>
+						<Route
+							path="/"
+							element={<ItemListContainer greeting="Ezequiel" />}
+						/>
+						<Route
+							path="/category/:id"
+							element={<ItemListContainer greeting="Ezequiel" />}
+						/>
+						<Route
+							path="/item/:id" 
+							element={<ItemDetailContainer onAdd={onAdd} />}
+						/>
+						<Route path='*' element={<h1>404 NOT FOUND</h1>}/>
 					</Routes>
+				</CartProvider>
 			</BrowserRouter>
 
     </div>
