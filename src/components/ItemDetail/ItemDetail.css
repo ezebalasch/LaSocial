@@ -74,7 +74,7 @@
 }
 .backButton{
     position: absolute;
-    z-index: 1000;
+    z-index: 2;
     padding: 1rem;
 }
 .btn{
@@ -97,6 +97,21 @@
         overflow-y: hidden ;
         margin-right: 2rem;
 
+    }
+    .col-6{
+        flex: content;
+    }
+    .vegetarian{
+        height: 75px;
+        float: left;
+    }
+    .glutenFree{
+        height: 75px;
+        float: left;
+    }
+    .col-4{
+        flex: auto;
+        justify-content: center;
     }
 
 }
