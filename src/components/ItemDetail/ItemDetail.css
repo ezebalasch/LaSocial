@@ -49,6 +49,10 @@
     margin-bottom: .5rem;
 
 }
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
 .vegetarian{
     height: 75px;
     float: left;
@@ -98,8 +102,15 @@
         margin-right: 2rem;
 
     }
+    .Info{
+        font-size: 1.2rem;
+    }
+    .InfoDescription{
+    font-size: 1rem;
+    }
     .col-6{
-        flex: content;
+        flex-basis: 100%;
+
     }
     .vegetarian{
         height: 75px;
@@ -107,11 +118,11 @@
     }
     .glutenFree{
         height: 75px;
-        float: left;
+        float: right;
     }
     .col-4{
-        flex: auto;
-        justify-content: center;
+        padding-top: 1.5rem;
+        flex-basis: 100%;
     }
 
 }
