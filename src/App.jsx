@@ -6,6 +6,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import {getFirestore, getDocs, collection } from "firebase/firestore";
 import { useEffect } from 'react';
 import { CartProvider } from './context/CartContext';
+import Cart from './components/Cart/Cart';
 
 
 function App() {
@@ -45,6 +46,7 @@ function App() {
 							path="/item/:id" 
 							element={<ItemDetailContainer onAdd={onAdd} />}
 						/>
+						<Route path='/cart' element={<Cart/>}/>
 						<Route path='*' element={<h1>404 NOT FOUND</h1>}/>
 					</Routes>
 				</CartProvider>

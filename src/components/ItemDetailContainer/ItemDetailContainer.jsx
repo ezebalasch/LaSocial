@@ -12,7 +12,7 @@ const ItemDetailContainer = ({ onAdd }) => {
 			setTimeout(() => {
 				const product = products.find(item => item.id === id)
 				resolve(product)
-			}, 100)
+			}, 50)
 		})
 		getItem.then(result => setProduct(result))
 	}, [id])

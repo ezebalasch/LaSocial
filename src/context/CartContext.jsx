@@ -1,32 +1,13 @@
-import { createContext, useState } from "react";
+import { createContext } from "react";
+import { useCart } from "../components/Hooks/UseCart";
 
-export const CartContext = createContext({
-    cart: []
-})
+export const CartContext = createContext([])
 
 export const CartProvider = ({children}) => {
-    const [cart, setCart] = useState([])
+    const cart = useCart()
     console.log(cart);
-    const addItem = (item, quantity) => {
-        if (!isInCart(item.id)) {
-            setCart(prev => [...prev, {...item, quantity}])
-        } else {
-            console.error("El producto ya fue cargado");
-        }
-    }
-    const removeItem = (itemId) => {
-        const cartUpdated = cart.filter(prod => prod.id !== itemId)
-        setCart(cartUpdated)
-    }
-    const clearCart = () => {
-        setCart([])
-    }
-    const isInCart = (itemId) => {
-        return cart.some(prod => prod.id === itemId)
-    }
-    
     return(
-        <CartContext.Provider value={(cart, addItem, removeItem, clearCart)}>
+        <CartContext.Provider value={cart}>
             {children}
         </CartContext.Provider>
     )

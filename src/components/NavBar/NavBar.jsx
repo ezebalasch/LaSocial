@@ -1,11 +1,12 @@
 
-import { Link, NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import Logo from '../../assets/LOGO-2.svg'
 import CartWidget from './CartWidget/CartWidget'
 import './NavBar.css'
 import { useState } from 'react';
 import { useEffect } from 'react';
 import { products } from './../../data/pizzas';
+import { Link } from 'react-router-dom';
   
 const Navbar = () => {
     const [itemsMenu, setItemsMenu] = useState([])
@@ -67,7 +68,9 @@ const Navbar = () => {
                                     ))}
                                 </ul>
                             </div>
-                            <CartWidget/>
+                            <Link to='/cart'>
+                                <CartWidget/>
+                            </Link>
                         </div>
                     </nav>
                 </>

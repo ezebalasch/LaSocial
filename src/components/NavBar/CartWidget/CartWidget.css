@@ -15,3 +15,6 @@
     box-shadow: 0 0 0 3px white, 0 0 0 5px #fa7647;
     transition: 0.7s;
 }
+.quantity{
+    text-decoration: none;
+}
