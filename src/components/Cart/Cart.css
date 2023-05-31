@@ -39,8 +39,8 @@
   text-align: left;
 }
 .responsive-table tr{
-    box-shadow: 0 0 0 1px rgb(250, 118, 71);
-    border-radius: 5px;
+    border-bottom: 1px solid rgba(97, 218, 251, 0.479);
+
 }
 .responsive-table img{
     border-radius: 5px;
