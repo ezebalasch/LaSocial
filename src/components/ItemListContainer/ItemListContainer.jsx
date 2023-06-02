@@ -1,11 +1,13 @@
 import { useEffect, useState } from "react"
-import { products } from './../../data/pizzas';
 import ItemList from './../ItemList/ItemList';
 import { useParams } from "react-router-dom";
 import './ItemListContainer.css'
 import CartView from './../CartView/CartView';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import { getFirestore, query, where } from 'firebase/firestore';
+import { collection } from 'firebase/firestore';
+import { getDocs } from 'firebase/firestore';
 
 
 const ItemListContainer = ({greeting}) => {
@@ -22,21 +24,25 @@ const ItemListContainer = ({greeting}) => {
         return() => window.removeEventListener('resize', handleResize)
     }, [])
 
+    useEffect(() => {
+		const db = getFirestore()
 
-	useEffect(() => {
-		const productList = new Promise((resolve, reject) => {
-			setTimeout(() => {
-				resolve(products)
-			}, 1000)
-		})
-		productList.then(result => {
-			if (id) {
-				const productsFiltered = result.filter(
-					item => item.crust_type === id
+		const refCollection = id
+			? query(
+					collection(db, "items"),
+					where("crust_type", "==", id)
+			  )
+			: collection(db, "items")
+
+		getDocs(refCollection).then(snapshot => {
+			if (snapshot.size === 0) setList([])
+			else {
+				setList(
+					snapshot.docs.map(doc => ({
+						id: doc.id,
+						...doc.data(),
+					}))
 				)
-				setList(productsFiltered)
-			} else {
-				setList(result)
 			}
 		})
 	}, [id])
