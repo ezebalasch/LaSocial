@@ -30,12 +30,13 @@
     padding: 0.5rem;
     background-color: #9cdbeb;
     color: white;
-
-
-
 }
 button{
     margin-bottom: 10px;
+}
+.Completar{
+    width: 95%;
+    margin: auto;
 }
 .checkout{
     display: block;

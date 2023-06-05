@@ -81,6 +81,7 @@ const Checkout = () => {
                     value={formValues.name}
                     type="text"
                     name="name"
+                    className="Completar"
                 />
             </Form.Group>
             <Form.Group
@@ -93,7 +94,7 @@ const Checkout = () => {
                     value={formValues.email}
                     type="email"
                     name="email"
-                    
+                    className="Completar"
                 />
             </Form.Group>
             <Form.Group className="mb-3">
@@ -103,7 +104,7 @@ const Checkout = () => {
                     value={formValues.phone}
                     type="text"
                     name="phone"
-                    
+                    className="Completar"
                 />
             </Form.Group>
             <Button

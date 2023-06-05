@@ -23,21 +23,27 @@ const Cart = () => {
     }
     return (
         <div className='center'>
+            <Link to="#" className="btn btn-danger checkout" onClick={() => window.history.back()}>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-left" viewBox="0 0 16 16">
+                        <path d="M10 12.796V3.204L4.519 8 10 12.796zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753z"></path>
+                    </svg>
+                    Volver
+             </Link>
             <table className="responsive-table">
                 {addedProducts.map(producto => (
                     <tr className='tableRow' key={producto.id}>
-                        <td data-label="Image">
+                        <td data-label="Imagen">
                             <img
                             height={60}
                             src={producto.img}
                             alt={producto.pizza_name}
                                 />
                         </td>
-                        <td data-label="Pizza Name" className='card-body'>{producto.pizza_name}</td>
-                        <td data-label="Quantity" className='price'>x{producto.quantity}</td>
+                        <td data-label="Pizza" className='card-body'>{producto.pizza_name}</td>
+                        <td data-label="Cantidad" className='price'>x{producto.quantity}</td>
 
 
-                        <td data-label="Price" className='price'>${producto.price * producto.quantity}</td>
+                        <td data-label="Precio" className='price'>${producto.price * producto.quantity}</td>
                         <td>
                             <Button
                                 onClick={() =>
