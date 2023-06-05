@@ -43,6 +43,7 @@ const Cart = () => {
                                 onClick={() =>
                                 deleteItem(producto.id)
                                 }
+                                className='Button'
                             >
                                 Eliminar
                             </Button>
