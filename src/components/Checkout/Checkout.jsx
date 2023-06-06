@@ -45,7 +45,8 @@ const Checkout = () => {
                 html: `<div id="qrcode"></div>`,
                 showDenyButton: true,
                 denyButtonText: `Salir`,
-                confirmButtonText: 'Guardar',
+                confirmButtonText:
+                '<i class="fa fa-thumbs-up"></i> Chatear!',
                 didOpen: () => {
                   const qrcodeContainer = document.getElementById('qrcode');
                   ReactDOM.render(
