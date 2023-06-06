@@ -6,6 +6,9 @@ import { CartContext } from "../../context/CartContext"
 import "./Checkout.css"
 import Swal from "sweetalert2"
 import { Link } from "react-router-dom"
+import QRCode from "react-qr-code"
+import ReactDOM from 'react-dom';
+import ReactWhatsapp from "react-whatsapp"
 
 const Checkout = () => {
     const [formValues, setFormValues] = useState({
@@ -33,14 +36,42 @@ const Checkout = () => {
 		const db = getFirestore()
 		const orderCollection = collection(db, "orders")
 
-		addDoc(orderCollection, order).then(response => {
-			if (response.id) {
-				clear()
-                Swal.fire("Con el siguiente código será atendido: " + response.id)
-
-			}
-		})
-
+        addDoc(orderCollection, order).then(response => {
+            if (response.id) {
+              clear();
+              Swal.fire({
+                title: 'Con el siguiente código será atendido: ',
+                text: 'Con el siguiente código será atendido: ',
+                html: `<div id="qrcode"></div>`,
+                showDenyButton: true,
+                denyButtonText: `Salir`,
+                confirmButtonText: 'Guardar',
+                didOpen: () => {
+                  const qrcodeContainer = document.getElementById('qrcode');
+                  ReactDOM.render(
+                    <QRCode
+                      size={256}
+                      style={{ height: 'auto', maxWidth: '50%', width: '50%' }}
+                      value={response.id}
+                      viewBox="0 0 256 256"
+                    />,
+                    qrcodeContainer
+                  );
+                },
+            }).then(result => {
+                if (result.isConfirmed) {
+                  const phoneNumber = '5492616075965'; // Reemplaza con el número de teléfono al que deseas enviar el mensaje
+                  const message = `¡Hola! Aquí está mi código QR para el pedido. ${response.id}`;
+                  const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+                  window.open(whatsappURL, '_blank');
+                } else if (result.isDenied) {
+                  Swal.fire('Código no guardado', '', 'error')
+                }
+              })
+              
+            }
+          });
+          
 	}
     const total = () =>
     addedProducts.reduce(
