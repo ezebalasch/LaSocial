@@ -10,9 +10,7 @@
 
 <h2>Project Screenshots:</h2>
 
-<img src="https://firebasestorage.googleapis.com/v0/b/la-social-ebalsch.appspot.com/o/bebidas%2Fproyecto%2FUntitled.gif?alt=media&amp;token=c0a501dd-88e0-4b36-b8ea-8bf33f1f3a03&amp;_gl=1*x7wvfj*_ga*MTE1MzIxMDY1Ni4xNjg0Mjc1NzM5*_ga_CW55HF8NVT*MTY4NjA4NzkzNC4xMy4xLjE2ODYwODkwMzkuMC4wLjA." alt="project-screenshot" width="400" height="400/">
-
-<img src="https://firebasestorage.googleapis.com/v0/b/la-social-ebalsch.appspot.com/o/bebidas%2Fproyecto%2FUntitled.gif?alt=media&amp;token=c0a501dd-88e0-4b36-b8ea-8bf33f1f3a03&amp;_gl=1*x7wvfj*_ga*MTE1MzIxMDY1Ni4xNjg0Mjc1NzM5*_ga_CW55HF8NVT*MTY4NjA4NzkzNC4xMy4xLjE2ODYwODkwMzkuMC4wLjA." alt="project-screenshot" width="0" height="400/">
+![GIF](/src/assets/gif/Untitled.gif)
 
 <h2>🛠️ Installation Steps:</h2>
 
